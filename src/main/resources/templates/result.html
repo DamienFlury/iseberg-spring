@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="webjars/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <title>Resultat</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Iseberg</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Essen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/add-reservation">Reservieren</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Über uns</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="p-3">
+      <h3>Erfasste Reservation</h3>
+      <p th:text="'Id: ' + ${reservation.id}"></p>
+      <p th:text="'Titel: ' + ${reservation.title}"></p>
+      <p th:text="'Beschreibung: ' + ${reservation.description}"></p>
+      <p th:text="'Datum: ' + ${reservation.date}"></p>
+      <a class="btn btn-success" href="/reservations"
+        >Weitere Reservationen eingeben</a
+      >
+    </div>
+    <footer style="margin-top: 20px">
+      <p style="border-top: 1px solid; width:20%">&copy; 2019 Damien Flury</p>
+    </footer>
+  </body>
+</html>

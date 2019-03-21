@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Reservationen</title>
+    <link
+      href="webjars/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Iseberg</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Essen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/add-reservation">Reservieren</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Über uns</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="p-3">
+      <h4>Reservationen</h4>
+      <table class="table table-striped">
+        <caption>
+          Liste der Reservationen
+        </caption>
+        <thead>
+          <tr>
+            <td>Beschreibung</td>
+            <td>Datum</td>
+            <td>Bestätigt</td>
+            <td>Bearbeiten</td>
+            <td>Löschen</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Fam Muster, 4 Personen</td>
+            <td>22/02/2019</td>
+            <td>Nein</td>
+            <td>
+              <a class="btn btn-info" href="/edit-reservation">Bearbeiten</a>
+            </td>
+            <td>
+              <a class="btn btn-warning" href="/delete-reservation">Löschen</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div>
+        <a class="btn btn-info" href="/add-reservation">Neue Reservation</a>
+      </div>
+      <footer style="margin-top: 20px">
+        <p style="border-top: 1px solid; width:20%">&copy; 2019 Damien Flury</p>
+      </footer>
+      <script src="webjars/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <script src="webjars/jquery/3.3.1-2/jquery.min.js"></script>
+    </div>
+  </body>
+</html>
